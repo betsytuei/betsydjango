@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        img{width: 300px;
+        height: 200px}
+        h1{background-color: blueviolet;
+        line-height: 100px;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        }
+        h1:hover{background-color: black}
+        
+    </style>
+   
+    
+    
+    
+</head>
+<body>
+<h1>Homepage</h1>
+
+<a class="btn btn-outline-success" href="{% url 'about' %}">About</a> 
+<a class="btn btn-outline-primary" href="{% url 'formpage' %}">Form</a>
+<a class="btn btn-outline-warning" href="{% url 'carousel' %}">carousel</a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur cumque dicta dolor doloribus expedita, libero nam nemo praesentium rem repellendus voluptatem? Accusamus in iste nam necessitatibus nemo nobis quae.</p>
+<img src="{% static 'images/mountain.jpeg' %}" alt="">
+<img src="{% static 'images/Mountain.jpeg' %}" alt="">
+<img src="{% static 'images/profileimage.jpeg' %}" alt="">
+<img src="{% static 'images/sun.jpeg' %}" alt="">
+<img src="{% static 'images/sunset.jpeg' %}" alt="">
+<img src="{% static 'images/wildlife.jpeg' %}" alt="">
+<br><br>
+<h1>Payment</h1>
+<p class="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto dolor dolorem, doloremque eligendi enim est excepturi facilis inventore nam nemo non nostrum pariatur quae quia, quibusdam ratione tenetur voluptas!</p>
+<img id="image" src="{% static 'images/profileimage.jpeg' %}" alt="">
+
+
+
+
+</body>
+
+</html>
